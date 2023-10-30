@@ -1,0 +1,60 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,a4paper,]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, subcaption, multicol}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Viktória Latičová\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xlaticova@stuba.sk}}
+	}
+
+\date{\small 12. december 2023} % upravte
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This article aims to reflect on some key privacy concerns caused by search engines collecting data while
+searching on the internet. Besides the obvious task of searching by keywords, they also collect user data
+to create detailed profiles. Browser fingerprinting techniques are used to identify users uniquely,
+allowing cross-site tracking leading to location tracking, privacy invasion, or third-party sharing.
+Protecting users' privacy requires not only technological solutions, because completely removing our
+browser fingerprint would make searching impossible, but also legal regulations and raising public
+awareness and education about this topic.
+\end{abstract}
+
+
+\section{Introduction}
+\section{Nejaká časť} 
+\section{Iná časť} 
+\subsection{Nejaké vysvetlenie}
+\subsection{Ešte nejaké vysvetlenie}
+\section{Dôležitá časť} 
+\section{Ešte dôležitejšia časť} 
+\section{Záver} 
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{ref}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
