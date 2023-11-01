@@ -2,9 +2,9 @@
 
 \documentclass[10pt,a4paper,]{article}
 
-\usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx, subcaption, multicol}
 \usepackage{url} % príkaz \url na formátovanie URL
@@ -15,7 +15,7 @@
 
 \pagestyle{headings}
 
-\title{{Browser fingerprint and privacy issues regarding data collection from search engines\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Ing. Mohammad Yusuf Momand, MSc.}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Browser fingerprint and privacy issues regarding data collection from search engines\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Ing. Mohammad Yusuf Momand, MSc.}} % meno a priezvisko vyučujúceho na cvičeniach
 
 \author{Viktória Latičová\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -31,23 +31,47 @@
 \maketitle
 
 \begin{abstract}
-This article aims to reflect on some key privacy concerns caused by search engines collecting data while searching on the internet. Besides the obvious task of searching by keywords, they also collect user data to create detailed profiles. Browser fingerprinting techniques identify users uniquely, allowing cross-site tracking leading to location tracking, privacy invasion, or third-party sharing. Protecting users' privacy requires not only technological solutions- because completely removing our browser fingerprint would make searching impossible, but also legal regulations and raising public awareness and education about this topic.
+This article aims to reflect on some key privacy concerns caused by search engines collecting data while searching on the internet. Besides the obvious task of searching by keywords, they also collect user data
+to create detailed profiles. Browser fingerprinting techniques identify users uniquely, allowing cross-site tracking leading to location tracking, privacy invasion, or third-party sharing. Protecting users' privacy requires not only technological solutions- because completely removing our browser fingerprint would make searching impossible, but also legal regulations and raising public awareness and education about this topic.
 \end{abstract}
+
 
 \section{Introduction}
 \section{browser fingerprint} 
-\section{click tracking - redirect link} 
-\section{third party tracking}
-\subsection{tpt in adds}
-\section{slicing} 
+Tracking users across various websites is not a novel concept in the online realm. Websites often monitor users without their awareness, and these practices can serve various purposes. Some are well-intentioned, such as personalization and user interface optimization, while others involve the sale of user information to third-party websites or the more extensive tracking of personal data.
+
+The most well-known tracking technique to the public is assigning unique identifiers to cookies, which are then stored on their devices for later use. But unlike cookies, creating a browser fingerprint actually does not require the permission of the user and as it is not stored in any device, it does not leave a trace either. 
+
+A browser fingerprint is essentially a user profile created from data collected during online activities. This profile includes a wide range of device-related information, such as IP address, time zone, CPU details, screen resolution, plugins, ad-blockers, and much more.Some webmail servives are even recognized for inspecting emails of users, that have never granted a permission to them.(Web tracking mechanisms) Their unique fingerprint is now a new tool for websides to assign their identity to activities on internet. 
+
+\begin{center}
+\includegraphics[scale = 0.4]{Browser-Fingerprint-example.jpg}
+\end{center}
+\subsection{click tracking - redirect link} 
+One of the most commonly used methods for obtaining information from users is quite straightforward – using URLs. Many people remain unaware that major search engines like Google, Yahoo, or Bing permit this kind of click tracking. Tracking clicks on links is not always employed for bad purposes. In most cases, it is used in affiliate marketing by companies for statistical and analytical purposes. 
+
+In certain cases, attackers can create a unique link that initially redirects the user to different site, take information that is needed, and swiftly redirects the user to the destination site. This method can be dangerous because of its almost non-existent chance of being discovered just by looking at the URL. 
+\subsection{network and location fingerprinting}
+\subsection{operating system fingerprinting}
 \section{consequences}
 \subsection{location}
 \subsection{hacking}
 \subsection{online tracking}
 \subsection{loss of privacy}
+\section{slicing} 
 \section{public awareness} 
 \section{reaction to lectures}
 \section{conclusion} 
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{ref}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
+
 
 
 
