@@ -57,16 +57,19 @@ One of the most straightforward features to identify is the IP address of a user
 At the same time, it is important to note that geolocation is not always 100\% accurate. It only provides an approximation of location. Also, the use of a VPN gateway or a Tor exit relay can be employed to mask the real IP address
 
 \subsection{operating system fingerprinting}
+Operating system fingerprinting reffers to a process of detecting operating system remotly when a device is connected to a network. (osf v anta). OS detection helps improve network management, ensures that the software is compatible with users operating system and also can detect unathorised attacks. The architecture of the OS can be recognised by Javascript and flash. They can detect informations from local timezone, language just in miliseconds. Later, they can also detect audio capabilities of the device, the support of printing of the device or even store tracking infromation. (web tracking mechanisms)
+
+We can devide os fingerprinting into two types: passive fingerprinting, where the attacker does not send out any packets to the victims. In this case, the victim connects to the attacker, most of the time by being tricked into conecting in some way. The other possibility is that the attacker just „sits“ between the user and the webside, that the user is trying to connect to and captures information along the way.Active fingerprinting, on the other hand requires a attacker to send specific network requests to the victim in order to be able to determine system information. 
+
 \subsection{browser extentions fingerprinting}
 Browser extentinions are programs, that are written to add functionalities to browser.They offer users a ability to block ads, take screenshots, manage passwords, assist when researching on internet. using more extentions extends the tracking powers of atacker, as  users become more and more unique for fingerprinting. Some extentions, without knowlege of the user, can be also designed to collect data from user from the start. These extensions are written using HTML, CSS, and JavaScript, which gives them the capability to track user activity similarly to websites..(extended tracking powers).
 \begin{center}
 \includegraphics[scale = 0.4]{Entropy.png}
 \end{center}
 \section{consequences}
-\subsection{location}
+With fingerprinting, attackers can find weaknesses in a user's device or browser, which could result in targeted attacks. Users can be uniquely identified and tracked via their browser fingerprints, even if they use private browsing modes or get rid of their cookies. It might be challenging for users to stay anonymous online after being exposed by profiles created with browser fingerprinting. To reduce the uniqueness of their fingerprint, some users may disable or alter browser security measures, which then compromises their online security.
 \subsection{hacking}
-\subsection{online tracking}
-\subsection{loss of privacy}
+
 \section{slicing} 
 \section{public awareness} 
 \section{reaction to lectures}
@@ -80,3 +83,5 @@ Browser extentinions are programs, that are written to add functionalities to br
 \bibliography{ref}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
+
+
