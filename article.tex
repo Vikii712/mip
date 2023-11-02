@@ -1,7 +1,7 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,a4paper,]{article}
-
+\documentclass[10pt,a4paper,column]{article}
+\usepackage[top=3cm, bottom=4cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} 
@@ -37,8 +37,8 @@ to create detailed profiles. Browser fingerprinting techniques identify users un
 
 
 \section{Introduction}
-\section{browser fingerprint} 
 Tracking users across various websites is not a novel concept in the online realm. Websites often monitor users without their awareness, and these practices can serve various purposes. Some are well-intentioned, such as personalization and user interface optimization, while others involve the sale of user information to third-party websites or the more extensive tracking of personal data.
+\section{browser fingerprint} 
 
 The most well-known tracking technique to the public is assigning unique identifiers to cookies, which are then stored on their devices for later use. But unlike cookies, creating a browser fingerprint actually does not require the permission of the user and as it is not stored in any device, it does not leave a trace either. 
 
@@ -52,7 +52,16 @@ One of the most commonly used methods for obtaining information from users is qu
 
 In certain cases, attackers can create a unique link that initially redirects the user to different site, take information that is needed, and swiftly redirects the user to the destination site. This method can be dangerous because of its almost non-existent chance of being discovered just by looking at the URL. 
 \subsection{network and location fingerprinting}
+One of the most straightforward features to identify is the IP address of a user. Obtaining a user's location from an IP involves a process known as geolocation. When a user accesses a website, their IP address is captured. An approximate geographic location can be provided by IP geolocation databases of providers. This information can include the country, city, or even latitude and longitude. The presence of a proxy can be easily detected and, with some skill, even bypassed.
+
+At the same time, it is important to note that geolocation is not always 100\% accurate. It only provides an approximation of location. Also, the use of a VPN gateway or a Tor exit relay can be employed to mask the real IP address
+
 \subsection{operating system fingerprinting}
+\subsection{browser extentions fingerprinting}
+Browser extentinions are programs, that are written to add functionalities to browser.They offer users a ability to block ads, take screenshots, manage passwords, assist when researching on internet. using more extentions extends the tracking powers of atacker, as  users become more and more unique for fingerprinting. Some extentions, without knowlege of the user, can be also designed to collect data from user from the start. These extensions are written using HTML, CSS, and JavaScript, which gives them the capability to track user activity similarly to websites..(extended tracking powers).
+\begin{center}
+\includegraphics[scale = 0.4]{Entropy.png}
+\end{center}
 \section{consequences}
 \subsection{location}
 \subsection{hacking}
@@ -62,17 +71,6 @@ In certain cases, attackers can create a unique link that initially redirects th
 \section{public awareness} 
 \section{reaction to lectures}
 \section{conclusion} 
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{ref}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
-\end{document}
-
-
 
 
 
